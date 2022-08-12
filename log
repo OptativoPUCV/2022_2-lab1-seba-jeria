@@ -229,3 +229,17 @@ exercises.c:59:11: error: ‘p’ is used uninitialized [-Werror=uninitialized]
 cc1: all warnings being treated as errors
 Compilation failed
 3c2845f
+Fri 12 Aug 2022 05:34:11 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:3: error: implicit declaration of function ‘intcpy’ [-Werror=implicit-function-declaration]
+   61 |   intcpy(p->edad,edad);
+      |   ^~~~~~
+exercises.c:59:11: error: ‘p’ is used uninitialized [-Werror=uninitialized]
+   59 |   strcpy(p->nombre,nombre);
+      |          ~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d3a2195
