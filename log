@@ -192,3 +192,40 @@ Fri 12 Aug 2022 05:27:50 PM UTC:
  tests:  2|5
 total_score: 20/70
 a75290d
+Fri 12 Aug 2022 05:33:40 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:11: error: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Werror=int-conversion]
+   61 |   strcpy(p->edad,edad);
+      |          ~^~~~~~
+      |           |
+      |           int
+In file included from /nix/store/dwsi3wsqpqm0hpzdm9fsxc7q732p9xwi-glibc-2.34-210-dev/include/features.h:490,
+                 from /nix/store/dwsi3wsqpqm0hpzdm9fsxc7q732p9xwi-glibc-2.34-210-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/dwsi3wsqpqm0hpzdm9fsxc7q732p9xwi-glibc-2.34-210-dev/include/stdio.h:27,
+                 from test.c:1:
+/nix/store/dwsi3wsqpqm0hpzdm9fsxc7q732p9xwi-glibc-2.34-210-dev/include/bits/string_fortified.h:77:1: note: expected ‘char * restrict’ but argument is of type ‘int’
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+In file included from test.c:5:
+exercises.c:61:18: error: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Werror=int-conversion]
+   61 |   strcpy(p->edad,edad);
+      |                  ^~~~
+      |                  |
+      |                  int
+In file included from /nix/store/dwsi3wsqpqm0hpzdm9fsxc7q732p9xwi-glibc-2.34-210-dev/include/features.h:490,
+                 from /nix/store/dwsi3wsqpqm0hpzdm9fsxc7q732p9xwi-glibc-2.34-210-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/dwsi3wsqpqm0hpzdm9fsxc7q732p9xwi-glibc-2.34-210-dev/include/stdio.h:27,
+                 from test.c:1:
+/nix/store/dwsi3wsqpqm0hpzdm9fsxc7q732p9xwi-glibc-2.34-210-dev/include/bits/string_fortified.h:77:1: note: expected ‘const char * restrict’ but argument is of type ‘int’
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+In file included from test.c:5:
+exercises.c:59:11: error: ‘p’ is used uninitialized [-Werror=uninitialized]
+   59 |   strcpy(p->nombre,nombre);
+      |          ~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3c2845f
