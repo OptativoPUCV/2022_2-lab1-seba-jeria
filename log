@@ -321,3 +321,14 @@ Fri 12 Aug 2022 05:43:45 PM UTC:
  tests:  4|3
 total_score: 40/70
 3c76a2a
+Fri 12 Aug 2022 05:44:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:92:6: error: statement with no effect [-Werror=unused-value]
+   92 |     v[i];
+      |     ~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+aaa18e3
