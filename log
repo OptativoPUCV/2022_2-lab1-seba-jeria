@@ -149,3 +149,24 @@ Fri 12 Aug 2022 05:16:33 PM UTC:
  tests:  1|6
 total_score: 10/70
 e5d9e30
+Fri 12 Aug 2022 05:27:33 PM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:16: error: request for member ‘n’ in something not a structure or union
+   40 |   *suma=sumaN(a.n)-sumaN(a,n-m);
+      |                ^
+exercises.c:40:9: error: too few arguments to function ‘sumaN’
+   40 |   *suma=sumaN(a.n)-sumaN(a,n-m);
+      |         ^~~~~
+exercises.c:21:5: note: declared here
+   21 | int sumaN(int a[], int N) {
+      |     ^~~~~
+exercises.c: In function ‘crearPersona’:
+exercises.c:58:11: error: unused variable ‘p’ [-Werror=unused-variable]
+   58 |   Persona p;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+f8b8e8a
