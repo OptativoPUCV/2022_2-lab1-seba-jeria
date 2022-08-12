@@ -260,3 +260,14 @@ exercises.c:59:11: error: ‘p’ is used uninitialized [-Werror=uninitialized]
 cc1: all warnings being treated as errors
 Compilation failed
 71e5735
+Fri 12 Aug 2022 05:34:35 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearPersona’:
+exercises.c:59:11: error: ‘p’ is used uninitialized [-Werror=uninitialized]
+   59 |   strcpy(p->nombre,nombre);
+      |          ~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6808a50
