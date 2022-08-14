@@ -427,3 +427,14 @@ exercises.c:120:4: error: incompatible types when assigning to type ‘Vector’
       |    ^
 Compilation failed
 4aabf8a
+Sun 14 Aug 2022 02:40:48 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:120:2: error: assignment to ‘Vector *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  120 | c=(a1+a2)+(b1+b2);
+      |  ^
+cc1: all warnings being treated as errors
+Compilation failed
+71f5702
