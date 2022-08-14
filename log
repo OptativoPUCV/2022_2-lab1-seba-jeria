@@ -494,3 +494,9 @@ exercises.c:112:12: error: incompatible types when assigning to type ‘int *’
       |            ^
 Compilation failed
 fcfbd2d
+Sun 14 Aug 2022 03:29:38 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 50/70
+c158538
