@@ -535,3 +535,20 @@ exercises.c:121:19: error: left-hand operand of comma expression has no effect [
 cc1: all warnings being treated as errors
 Compilation failed
 e737630
+Sun 14 Aug 2022 03:35:58 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:121:19: error: expected ‘)’ before ‘;’ token
+  121 |   *c->datos=(a1+a2;
+      |             ~     ^
+      |                   )
+exercises.c:121:20: error: expected ‘;’ before ‘}’ token
+  121 |   *c->datos=(a1+a2;
+      |                    ^
+      |                    ;
+  122 | }
+      | ~                   
+Compilation failed
+b49b56a
