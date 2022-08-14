@@ -473,3 +473,14 @@ Sun 14 Aug 2022 03:24:40 AM UTC:
  tests:  6|2
 total_score: 50/70
 12b18c3
+Sun 14 Aug 2022 03:29:04 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:112:11: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+  112 |   c->datos=a;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+2ff8fc5
