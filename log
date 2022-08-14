@@ -484,3 +484,13 @@ exercises.c:112:11: error: assignment to ‘int *’ from incompatible pointer t
 cc1: all warnings being treated as errors
 Compilation failed
 2ff8fc5
+Sun 14 Aug 2022 03:29:11 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:112:12: error: incompatible types when assigning to type ‘int *’ from type ‘Vector’
+  112 |   c->datos=*a;
+      |            ^
+Compilation failed
+fcfbd2d
